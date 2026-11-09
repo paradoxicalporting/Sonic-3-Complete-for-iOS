@@ -1,27 +1,31 @@
-html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     
-    <!-- iOS Fullscreen App Settings -->
+    <!-- iOS Fullscreen App Configurations -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Sonic the Hedgehog</title>
+    <title>Sonic 3 Complete</title>
+    
+    <!-- Custom Home Screen Icon (Change the URL below to your own image if wanted!) -->
+    <link rel="apple-touch-icon" href="https://imgur.com/gallery/sonic-icon-O5bAbe8">
     
     <style>
-        /* Forces the webpage to perfectly fit the iPad display boundaries */
         body, html {
             margin: 0;
             padding: 0;
-            width: 100%;
-            height: 100%;
+            width: 100vw;
+            height: 100vh;
             overflow: hidden;
             background-color: #000;
         }
-        /* Forces your specific Sonic game to fill the screen without borders */
+
         iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
             height: 100%;
             border: none;
@@ -30,8 +34,15 @@ html
 </head>
 <body>
 
-    <!-- Your optimized Sonic Master System web view -->
-    <iframe src="https://funhtml5games.com?embed=sonic" scrolling="no"></iframe>
+    <!-- Sonic 3 Complete Emulator Core -->
+    <iframe 
+        src="https://retrogames.cc" 
+        allowfullscreen="true" 
+        webkitallowfullscreen="true" 
+        mozallowfullscreen="true" 
+        scrolling="no" 
+        allow="cross-origin-isolated">
+    </iframe>
 
 </body>
 </html>
